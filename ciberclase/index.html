@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Escalera</title>
+    <link rel="icon" type="image/png" href="coil.png">
+    <script src="escalera.js"></script>
+    <style>
+        #micanvas{
+            position: absolute;
+            border: 1px solid;
+            background-color: white;
+            left: 50vw;            
+            transform: translate(-50%,0);
+            /*margin-left: 50%;
+            margin-top: 10px;*/
+        }
+        
+        #mago
+        {
+            position: absolute;
+            left: 5px;
+            bottom: 5px;
+        }
+    
+    </style>
+    
+</head>
+<body>
+ <button id="Red">Nueva Red</button> 
+ <button id="no">NO</button>
+ <button id="nc">NC</button>
+ <button id="coil">Coil</button>
+ <button id="subNet">Sub Red</button>
+   
+   <p id="posicion" style="text-align: center;">Posicion: </p>
+   <p id="clicked" style="text-align: center;"></p>
+    <canvas id="micanvas" width="900" height="80" onmousemove="getMousePosition(event)" onclick="getMousePosition1(event)">
+        Su navegador no soporta canvas
+    </canvas>
+    
+    <header>
+        <img src="mago.png" alt="" id="mago">
+        
+    </header>
+</body>
+</html>
